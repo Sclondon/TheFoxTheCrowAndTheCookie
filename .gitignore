@@ -1,0 +1,4 @@
+.godot/
+*.tmp
+audio/song.*
+shots/

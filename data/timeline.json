@@ -1,0 +1,49 @@
+{
+  "_readme": "Every story beat and the music sources live here. Times are seconds into the song. Nudge 't' values to line beats up with the recording; 'length' is when the ending card shows. 'focus' is what the camera drifts to and the off-screen arrow points at: crow, fox, cookie, cottage, tree, den, or a world x number. See README.md.",
+  "length": 211.0,
+  "sources": {
+    "default": "spotify",
+    "spotify": {
+      "_note": "mewithoutYou - The Fox, The Crow And The Cookie (It's All Crazy! It's All False! It's All a Dream! It's Alright, 2009, track 2, 3:31).",
+      "track_id": "4SenxwCmSCIXfklUvmXyNc",
+      "offset": 0.0
+    },
+    "youtube": {
+      "_note": "Official art track on the 'mewithoutYou - Topic' channel (provided by Universal Music Group), 3:31, same audio as the album. The VEVO music video (-fRFMkFbH8I, 3:47) also exists; if you switch to it, measure its intro and set 'offset' to the seconds of video before the song's first note.",
+      "video_id": "kwGgQAMj5DI",
+      "offset": 0.0
+    }
+  },
+  "sky": [
+    { "t": 0,   "phase": "dawn" },
+    { "t": 14,  "phase": "morning" },
+    { "t": 70,  "phase": "day" },
+    { "t": 128, "phase": "afternoon" },
+    { "t": 160, "phase": "golden" },
+    { "t": 178, "phase": "dusk" },
+    { "t": 196, "phase": "night" }
+  ],
+  "beats": [
+    { "t": 0,   "id": "dawn",             "caption": "Dawn, at the edge of the wood", "focus": "cottage" },
+    { "t": 8,   "id": "tray",             "caption": "",                              "focus": "cottage" },
+    { "t": 16,  "id": "crow_wakes",       "caption": "The crow in the old tree",      "focus": "crow" },
+    { "t": 26,  "id": "crow_spies",       "caption": "Something sweet on the sill",   "focus": "cookie" },
+    { "t": 34,  "id": "crow_swoops",      "caption": "",                              "focus": "crow" },
+    { "t": 41,  "id": "crow_takes",       "caption": "One cookie, taken",             "focus": "crow" },
+    { "t": 50,  "id": "crow_home",        "caption": "Her prize",                     "focus": "crow" },
+    { "t": 60,  "id": "fox_wakes",        "caption": "Below, a fox wakes hungry",     "focus": "fox" },
+    { "t": 68,  "id": "fox_trots",        "caption": "",                              "focus": "fox" },
+    { "t": 78,  "id": "fox_sees",         "caption": "He looks up",                   "focus": "tree" },
+    { "t": 88,  "id": "flatter_feathers", "caption": "The first compliment",          "focus": "tree" },
+    { "t": 104, "id": "flatter_eyes",     "caption": "The second compliment",         "focus": "tree" },
+    { "t": 120, "id": "flatter_crown",    "caption": "The third compliment",          "focus": "tree" },
+    { "t": 136, "id": "ask_song",         "caption": "A request",                     "focus": "tree" },
+    { "t": 148, "id": "sing",             "caption": "She sings",                     "focus": "cookie" },
+    { "t": 152, "id": "gone",             "caption": "And it is gone",                "focus": "tree" },
+    { "t": 156, "id": "fox_thanks",       "caption": "The fox's bow",                 "focus": "fox" },
+    { "t": 164, "id": "fox_leaves",       "caption": "Off he trots",                  "focus": "fox" },
+    { "t": 176, "id": "dusk",             "caption": "Dusk",                          "focus": "crow" },
+    { "t": 186, "id": "crumbs",           "caption": "Crumbs",                        "focus": "crow" },
+    { "t": 197, "id": "night",            "caption": "Night in the wood",             "focus": "crow" }
+  ]
+}
