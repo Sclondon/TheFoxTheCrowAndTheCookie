@@ -299,6 +299,10 @@ func _place_camera(_d: float) -> void:
 	# put the action's middle (y = -40) a little below the screen's middle,
 	# but never show more than 30% of the screen as earth
 	var cy := clampf(-40.0 - vis.y * 0.1, -0.38 * vis.y, -0.2 * vis.y)
+	# On a phone held upright the screen is mostly height: keep the earth to about
+	# 15% so the wood fills it, instead of a band of empty ground along the bottom.
+	if screen.y > screen.x:
+		cy = -0.35 * vis.y
 	cam.zoom = Vector2(zoom, zoom)
 	cam.position = Vector2(roundf(cam_x * zoom) / zoom, roundf(cy * zoom) / zoom)
 	sky.cam = cam.position
